@@ -1,0 +1,132 @@
+body
+{
+	background: url(music1.jpg) no-repeat fixed center;
+	background-size: cover;
+}
+
+.videoPlayer
+{
+	width:80%;
+	margin: 100px auto;
+}
+
+
+#controls
+{
+	width:480px;
+	height:25px;
+	font-size:13px;
+	color:orange;
+	background-color: grey;
+	font-family:georgia;
+	position:relative;
+	top:-20px;
+}
+
+#controls div
+{
+	float:left;
+	height: 25px;
+	line-height: 25px;
+}
+
+.player
+{
+	width:40px;
+	cursor:pointer;
+	text-align:center;
+}
+
+#progressBar
+{
+	position:relative;
+	background-color:#ffcc99;
+	width:310px;
+
+}
+#progress
+{
+	position:absolute;
+	background-color: orange;
+}
+#loadStatus
+{
+	position:absolute;
+	background-color: #d5ff80;
+}
+#timeDisplay
+{
+	width:120px;
+	text-align: center;
+	font-size: 15px;
+}
+
+.audio-jb{
+
+	margin: 0 auto;
+	width:80%;
+	height: auto;
+	margin:50px;
+	position: relative;
+	list-style: none;
+
+}
+.jukebox
+{
+	
+	background-color: rgba(0,0,0,0.7);
+	box-shadow: 20px;
+	top:90px;
+	width:90%;
+	margin: 50px auto;
+	border:2px solid black;
+	border-radius:10px;
+	position: relative;
+
+}
+
+.audio-jb li{
+ 
+ display: inline-block;
+ width: 100%;
+ border-radius:5px;
+ border-bottom: 1px solid #999;
+ background: url(play.png) no-repeat ;
+ background-position: 9px 4px;
+ background-size: 25px 25px;
+color: white;
+padding: 9px 5px 10px 40px;
+font-weight: bold;
+background-color: #006633;
+
+}
+
+
+.audio-jb li:hover{
+	background-color: #2eb82e;
+	color:#ffff00;
+}
+
+#playing{
+	
+	
+	background:url(pause.png) no-repeat;
+	background-position: 9px 4px;
+    background-size: 25px 25px;
+    color:#ff8c1a;
+    background-color: #ccff66;
+    font-weight: bolder;
+    font-style: italic;
+
+}
+
+#paused{
+	background: url(play.png) no-repeat ;
+ background-position: 9px 4px;
+ background-size: 25px 25px;
+background-color: #c65353;
+    font-weight: bolder;
+    font-style: italic;
+    color:#00b386;
+}
+

@@ -1,0 +1,133 @@
+body
+{
+	background-color: grey;
+	font-family: Georgia;
+
+}
+
+li{
+	text-decoration:none;
+	list-style-type: none;
+	display: block;
+}
+ul
+{
+	padding:0;
+}
+
+.panel
+{
+	
+	overflow: hidden;
+	height: 100%;
+	color:white;
+	width:60%;
+	margin:50px auto;
+	background:url(panel.jpg) no-repeat center;
+	background-size: cover;
+	border-radius:20px;
+	/*background-color: transparent;*/
+}
+
+.panel h2
+{
+	text-align: center;
+}
+
+
+.question 
+{
+	float: left;
+	margin-bottom: 5px;
+	margin-top: 5px; 
+	font-size: 15px;
+	
+}
+
+.answer
+{
+	display: block;
+}
+#workExpValue
+{
+	text-align: center;
+	background-color: grey;
+	color:orange;
+	font-size: 20px;
+}
+.radio-inline label
+{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	position: relative;
+}
+
+.sports
+{
+	float: left;
+}
+
+.showResults
+{
+	height: 140px;
+	position: relative;
+}
+
+.showResults ul
+{
+	padding:0;
+}
+
+.details
+{
+	text-align: left;
+}
+.submitFinal,.interest
+{
+	text-align: center;
+}
+
+.interest h2
+{
+	margin-bottom: 20px;
+}
+
+.result .panel
+{
+	width:90%;
+
+}
+
+.showResults ul
+{
+	color:blue;
+}
+
+.navigation 
+{
+	text-align: center;
+	font-size: 20px;
+	color:red;
+}
+
+.personalInfo i
+{
+	position: absolute;
+    top: 450px
+}
+
+i{
+	cursor: pointer;
+}
+
+#showSubmit
+{
+	margin-top: 10px;
+	margin-bottom:10px;
+}
+
+.showResults span
+{
+	color:white;
+}

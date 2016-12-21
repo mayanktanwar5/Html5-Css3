@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Personalised App</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/weather-icons.min.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="app.js"></script>
+
+</head>
+<body>	
+	<form>
+			<div class="personalInfo offOpacity panel ">
+				<div class="panel">
+				<h2>Personal Details</h2>
+				<ul class="unstyled">
+					<li class="question"> Name </li>
+					<li class="answer"><input  required class="form-control " type="text" name="name" autofocus placeholder="Name" id="name-inp"></li>
+					<li class="question">Email </li>
+					<li class="answer"><input class="form-control" type="email" name="email" required placeholder="Email" id="email-inp"></li>
+					<li class="question">Password </li>
+					<li class="answer"><input class="form-control" type="password"  minlength ="6" maxlength="15" required name="email" placeholder="Password" ></li>
+					 
+					
+					<li class="question">
+					<label class="radio-inline" >
+					 <input  type="radio" class="gender" name="gender" value="Male" id="gender-male">
+					 Male</label>
+					 <label class="radio-inline" >
+					 <input  type="radio" class="gender" name="gender" value="Female" id="gender-female">
+					 Female</label>
+					 </li>
+					
+					
+					<li class="answer">
+					 <select id="country-inp" name="country" class="form-control">
+					  <option value="default" selected ="selected" >Select a country</option>	
+					  <option value="US">United States</option>
+					  <option value="Aus">Australia</option>
+					  <option value="Brazil">Brazil</option>
+					  <option value="Japan">Japan</option>
+					 </select>
+					</li>
+					<li class="question">Your area Code </li>
+					<li class="answer"><input disabled type="text" class="form-control" name="zipCode" placeholder="Select Country to know zipCode Format" id="zipCode-inp"></li>
+					<li class="question">Your Age  </li>
+					<li class="answer"><input  type="Number" min="10" max="5" class="form-control" name="age" ></li>
+					<li class="question">Your color choice </li>
+					<li class="answer"><input  type="color" class="form-control" name="color"  ></li>
+					<li class="question">Your DOB </li>
+					<li class="answer"><input  type="date" class="form-control" name="date"  ></li>
+
+					
+				</ul>
+				</div><!-- panel-content -->
+				
+			</div><!-- personalInfo -->
+			<div class="workDetails panel offOpacity">
+				<div class="panel">
+					<h2>Work Details</h2>
+				<ul class="unstyled">
+					<li class="question">Years of Experience</li>
+					<li class="answer"><input class="form-control" id="workExp" type="range" id="range" min="1" max="10" step="1" class="form-control"> <input class="form-control" type="text" id="workExpValue"></input></li>
+				</ul>
+				
+				</div>
+			</div><!-- workDetails -->
+			<div class="interest panel  offOpacity">
+				<div class="panel">
+					<h2>Interest</h2>
+				<div class="sportsList">
+					<h4>Favorite Sports</h4>
+					<label class="checkbox-inline"> <input type="checkbox" class="sports" value="football"> Football</label>
+					<label class="checkbox-inline"> <input type="checkbox" class="sports" value="cricket">Cricket</label>
+					<label class="checkbox-inline"> <input type="checkbox" class="sports" value="basketball">Basketball</label>
+				</div>
+				<div class="cuisineList">
+					<h4>Favorite Cuisine </h4>
+					<label class="checkbox-inline"> <input type="checkbox" class="cuisine" value="chinese"> Chinese</label>
+					<label class="checkbox-inline"> <input type="checkbox" class="cuisine" value="continental">Continental</label>
+					<label class="checkbox-inline"> <input type="checkbox" class="cuisine" value="italian">Italian</label>
+				</div>
+
+				<div class="navigation center">
+					
+					
+					<i class="fa fa-arrow-right" id="showSubmit" aria-hidden="true"></i>
+				</div>
+				</div>
+			</div>
+			<div class="panel result">
+				<div class="panel">
+					<div class="showResults">
+					<div class="col-md-4 col-sm-4 details" id="viewPersonalDetail">
+					<h4>Personal Detail</h4>
+					<ul>
+						<span>Name :</span><li id="viewName"></li>
+						<span>Email :</span><li id="viewEmail"></li>
+						<span>Gender :</span><li id="viewGender"></li>
+						<span>Country :</span><li id="viewCountry"></li>
+					</ul>
+				</div>
+				<div class="col-md-4 col-sm-4 details" id="viewWorkDetails">
+					<h4>Work Details</h4>
+					<ul>
+						<span>Work Experience :</span><li id="viewExperience"></li>
+					</ul>
+				</div>
+				<div class="col-md-4 col-sm-4 details">
+					<h4>Interest</h4>
+					<ul>
+						<span>Sports :</span><li id="viewSports"></li>
+						<span>Cuisine</span><li id="viewCuisine"><li>
+					</ul>
+				</div>
+				</div>
+				
+				</div>
+				<div class="submitFinal">
+					<button style="margin-right:30px;" type="reset" id="reset" class="btn btn-warning">Reset</button>
+
+					<button  style="margin-left:30px;" type="submit" id="reset" class="btn btn-success">Submit</button>
+
+				</div>
+			</div>
+
+		</form><!-- form -->	
+</body>
+</html>	

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Video</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/weather-icons.min.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+	 <link rel="stylesheet" href="style.css"> 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="script.js"></script>
+	
+</head>
+<body>
+	<div class="container">
+
+	<div class="row">
+	<div class="col-md-6 col-lg-6">
+		<div class="videoPlayer">
+			<video  id="videoPlay" width="480" height="300" preload="auto" posters="music.jpg" >
+				<source src="DhoomMachale.mp4" type="video/mp4"/> 
+				<source src="DhoomMachale.webm" type="video/webm"/> 
+				<source src="DhoomMachale.ogg" type="video/ogg"/> 
+			</video>
+			<div id="controls">
+				<div id="play_pause" class="player">Play</div>
+				<div id="progressBar">
+					<div id="loadStatus">
+						
+					</div>
+					<div id="progress">
+						
+					</div>
+				</div>
+				<div id="timeDisplay">
+					<span id="currentTime">
+						00:00
+					</span>
+					<span id="totalTime">
+						00:00
+					</span>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<div class="col-md-6 col-lg-6">
+	<div class="jukebox">
+	<ul class="audio-jb">
+	<li data-src="audio/[Songs.PK] 03 - 2 States - Mast Magan.mp3" >Mast agan</li>
+	<li data-src="01 - Cocktail - Tumhi Ho Bandhu [DM].mp3">Tuh hi ho</li>
+	<li data-src="03 - A2 - Chahun Main Ya Naa [DJMaza].mp3">Chaun main ya Na</li>
+	<li data-src="-09- james blunt - you are beautiful.mp3">Beautiful</li>
+	</ul>
+</div>	
+</div>
+</div>
+</body>
+</html>

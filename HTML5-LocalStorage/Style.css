@@ -1,0 +1,29 @@
+body
+{
+background-color: grey ;
+height: 100%;
+
+}
+
+
+.auction-board
+{
+
+top:200px;
+
+}
+.auction{
+
+}
+.art
+{
+
+	height:200px;
+
+}
+.art-image
+{
+	height: 100%;
+	position: relative;
+
+}
