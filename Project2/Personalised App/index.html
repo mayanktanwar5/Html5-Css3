@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>App</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+	<script   src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>	
+</head>
+<body>
+<div class="container-fluid ">
+	<section id="survey">
+		<div class="question-list">
+			
+				<form id="question1" >
+					<div class="question form-group">
+						<h1 class="ques text-center">What is your favorite <span class="gold tiltLeft">Cusine</span> <span class="swing">?</span> </h1>
+						<input class="form-control" type="text" placeholder="Like Italian, chinese , Indian..." required></input>
+						<button class="btn btn-info" data-ques="question1" >Submit</button>
+					</div>
+				</form>
+			
+			<form id="question2" class="hide" >
+				<div class="question form-group">
+					<h1 class="ques text-center">What is your favorite <span class="cyan tiltRight">Sports</span> <span class="swing">? </span>
+					</h1>
+					<input class="form-control" type="text" placeholder="Like Football Cricket Tennis"></input>
+					<button class="btn btn-info" data-ques="question2" >Submit</button>
+				</div>
+			</form>
+			<form id="question3" class="hide" >
+				<div class="question form-group">
+					<h1 class="ques text-center">What is your favorite <span class="green tiltLeft">Movie Genre</span> <span class="swing">?</span> </h1>
+					<input class="form-control" type="text" placeholder="Like Drama Sci-Fi Romantic"></input>
+					<button class="btn btn-info" data-ques="question3" >Submit</button>
+				</div>
+			</form>
+			<form id="question4" class="hide">
+				<div class="question form-group">
+					<h1 class="ques text-center">Which is your favorite <span class="orange tiltRight">Place</span> <span class="swing">?</span></h1>
+					<input class="form-control" type="text" placeholder="Like Paris Switzerland"></input>
+					<button class="btn btn-info" data-ques="question4" >Submit</button>
+				</div>
+			</form>
+		</div>
+	</section>
+	<section id="surveyResult"class=" hide">
+	<div class="overlay"></div>
+	<div class="card-wrapper container">
+		<div class="col-md-6 card">
+			<div class="row col-md-12 card-header">
+				<h1 class="text-center heading">Cusine</h1>
+				<p> Your favorite cusine served here</p>
+			</div>
+			 <div class="row col-md-12 card-content">
+			 	
+			 </div>
+		</div>
+		<div class="col-md-6">
+			<div class="row col-md-12 card-header">
+				<h1 class="text-center heading">Cusine</h1>
+				<p> Your favorite cusine served here</p>
+			</div>
+		</div>
+	</div>
+		
+	</section>
+</div>
+<script   src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>	
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
